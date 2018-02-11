@@ -20,7 +20,7 @@
 /* ------ Top Menu Bar ------ */
 .title {
     list-style-type: none;
-    margin: 10px;
+    margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #81D3EB;
@@ -106,6 +106,19 @@
 
 
 /* About Website Row */
+/* .backgroundAboutWebsiteRow{
+  background-color: blue;
+  background: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,0.5));
+  border-top-left-radius: 50%;
+  margin-top: 10px;
+  padding-bottom: 50px;
+  padding-top: 10px;
+} */
+
+/***************************************************************/
+
+/* Homepage Webpage*/
+
 .HomePageAboutWebsiteRow{
   margin-top: 50px;
   max-width: 1000px;
@@ -123,6 +136,7 @@
   font-weight: lighter;
   font-size: 28px;
   padding: 10px;
+  margin-bottom: 10px;
   /* padding-bottom: 5px; */
 }.BoxTextAboutWebsite{
   display: block;
@@ -130,20 +144,45 @@
   font-family: sans-serif;
   font-weight: lighter;
   /* background-color: #008194; */
-  background-color: white;
+  /* background-color: white; */
   margin: 10px;
+  margin-left: -5px;
   padding: 10px;
-  border-radius: 10px;
+
+  /* border-radius: 10px; */
   /* box-shadow: 5px 10px 8px black; */
   /* -webkit-box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.48);
   -moz-box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.48); */
-  box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.48);
+  /* box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.48); */
 }.BoxTextAboutWebsiteLeft{
   margin-left: 30px;
   margin-right: 15px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.48);
 }.BoxTextAboutWebsiteRight{
   margin-left: 15px;
   margin-right: 30px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.48);
+}.BoxTextAboutWebsiteImages{
+  /* background-color: white; */
+  display: block;
+  /* border-radius: 10px; */
+  margin: 10px;
+  padding: 15px;
+  /* border-radius: 10px;
+  background-color: white;
+  box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.48); */
+}.HtmlImage{
+  transform: rotate(7deg);
+}.CssImage{
+  transform: translateX(10px);
+}.PythonImage{
+  transform: rotate(-7deg);
+}.JavaImage{
+  transform: rotate(3deg) translateX(10px);
 }
 
 /* About Website Row */
@@ -224,12 +263,10 @@
   margin-right: 60px;
 }.QuickAboutMeList{
   margin-top: 22px;
+  list-style-type: none;
 }
+
 /* The Quick Profile Row */
-
-
-
-
 .HomePageRescueCatsRow{
   margin-top: 50px;
   max-width: 1000px;
@@ -244,8 +281,6 @@
   padding: 10px;
   margin-top: 50px;
 }
-
-
 
 .HomePageHobbiesRow{
   margin-top: 50px;
@@ -292,42 +327,123 @@
   margin-top: 50px;
 }
 
+/* Homepage Webpage*/
 
+/***************************************************************/
 
+/* About Me Webpage */
 
-/*
-
-.aboutMe{
-  color: white;
-  border-radius: 10px;
-  margin: 10px;
-  padding-right: 10px;
-}
-
-
-.achievementsTitle{
+.AboutMeTopRowTitle{
   text-align: center;
+  font-weight: bold;
+  font-size: 28px;
   padding-bottom: 5px;
-}
-.achievementsText{
-  display: block;
   color: white;
-  background-color: #008194;
-  margin: 10px;
+  font-family: sans-serif;
   padding: 10px;
+  margin: 20px;
   border-radius: 10px;
-} */
+  background-color: #008194;
+}
 
-.ycTopRow {
-  /* display: flex; */
-  margin: 10px;
+/* About Me Webpage */
+
+/***************************************************************/
+
+/* Hobbies Webpage*/
+
+.HobbiesTopRowTitle{
+  text-align: center;
+  font-weight: bold;
+  font-size: 28px;
+  padding-bottom: 5px;
+  color: white;
+  font-family: sans-serif;
   padding: 10px;
+  margin: 20px;
+  border-radius: 10px;
+  background-color: #008194;
 }
 
-.GOTG {
+/* Hobbies Webpage*/
+
+/***************************************************************/
+
+/* Youtube Channel Webpage */
+
+.ycTopRowTitle{
+  text-align: center;
+  font-weight: bold;
+  font-size: 28px;
+  padding-bottom: 5px;
+  color: white;
+  font-family: sans-serif;
+  padding: 10px;
+  margin: 20px;
+  border-radius: 10px;
+  background-color: #008194;
+}.ycTopRow {
+}.GOTG {
   margin-right: 10px;
-}
-
-.DrSt {
+}.DrSt {
   margin-left: 105px;
 }
+
+/* Youtube Channel Webpage */
+
+/***************************************************************/
+
+/* Projects Webpage */
+
+.ProjectsTopRowTitle{
+  text-align: center;
+  font-weight: bold;
+  font-size: 28px;
+  padding-bottom: 5px;
+  color: white;
+  font-family: sans-serif;
+  padding: 10px;
+  margin: 20px;
+  border-radius: 10px;
+  background-color: #008194;
+}
+
+/* Projects Webpage */
+
+/***************************************************************/
+
+/* Charity Work Webpage */
+
+.CharityWorkTopRowTitle{
+  text-align: center;
+  font-weight: bold;
+  font-size: 28px;
+  padding-bottom: 5px;
+  color: white;
+  font-family: sans-serif;
+  padding: 10px;
+  margin: 20px;
+  border-radius: 10px;
+  background-color: #008194;
+}
+
+/* Charity Work Webpage */
+
+/***************************************************************/
+
+/* Education Webpage*/
+
+.EducationTopRowTitle{
+  text-align: center;
+  font-weight: bold;
+  font-size: 28px;
+  padding-bottom: 5px;
+  color: white;
+  font-family: sans-serif;
+  padding: 10px;
+  margin: 20px;
+  border-radius: 10px;
+  background-color: #008194;
+}
+
+/* Education Webpage*/
