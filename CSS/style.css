@@ -96,6 +96,8 @@
   text-align: center;
   font-weight: bold;
   padding-bottom: 5px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 /* .BoxText{
   display: block;
@@ -121,7 +123,6 @@
   margin-top: 50px;
   max-width: 1000px;
   background-color: #A9D171;
-  padding-top: 10px;
   padding-bottom: 20px;
   border-radius: 10px;
   box-shadow: 10px 10px 24px 5px rgba(0,0,0,0.48);
@@ -133,25 +134,17 @@
   font-family: sans-serif;
   font-weight: lighter;
   font-size: 28px;
-  padding: 10px;
   margin-bottom: 10px;
-  /* padding-bottom: 5px; */
+  padding-top: 15px;
+  padding-bottom: 5px;
 }.BoxTextAboutWebsite{
   display: block;
   color: black;
   font-family: sans-serif;
   font-weight: lighter;
-  /* background-color: #008194; */
-  /* background-color: white; */
   margin: 10px;
   margin-left: -5px;
   padding: 10px;
-
-  /* border-radius: 10px; */
-  /* box-shadow: 5px 10px 8px black; */
-  /* -webkit-box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.48);
-  -moz-box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.48); */
-  /* box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.48); */
 }.BoxTextAboutWebsiteLeft{
   margin-left: 30px;
   margin-right: 15px;
@@ -165,14 +158,9 @@
   border-radius: 10px;
   box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.48);
 }.BoxTextAboutWebsiteImages{
-  /* background-color: white; */
   display: block;
-  /* border-radius: 10px; */
   margin: 10px;
   padding: 15px;
-  /* border-radius: 10px;
-  background-color: white;
-  box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.48); */
 }.HtmlImage{
   transform: rotate(7deg);
 }.CssImage{
@@ -190,65 +178,55 @@
   margin-top: 50px;
   margin-bottom: 50px;
   max-width: 1000px;
-  /* max-height: auto; */
-  padding-top: 10px;
   padding-bottom: 20px;
   border-radius: 10px;
   background-color: #008194;
-  /* -webkit-box-shadow: 10px 10px 24px 5px rgba(0,0,0,0.48);
-  -moz-box-shadow: 10px 10px 24px 5px rgba(0,0,0,0.48); */
   box-shadow: 10px 10px 24px 5px rgba(0,0,0,0.48);
-}.HomePageProfileRowTitle{
+}
+.HomePageProfileRowTitle{
   text-align: center;
   font-weight: bold;
   font-size: 28px;
-  padding-bottom: 5px;
   color: white;
   font-family: sans-serif;
   font-weight: lighter;
-  padding: 10px;
-  /* margin-top: 50px; */
+  padding-top: 15px;
+  margin-bottom: 10px;
+}.BoxTitleQuickAboutMe{
+  text-align: center;
+  font-weight: bold;
+  padding-top: 5px;
+  margin-top: 0;
+  margin-bottom: 0;
 }.BoxTextQuickAboutMe{
   display: block;
   color: black;
   font-family: sans-serif;
   font-weight: lighter;
-  /* background-color: #008194; */
   background-color: white;
   margin: 10px;
   padding: 10px;
   border-radius: 10px;
-  /* box-shadow: 5px 10px 8px black; */
-  /* -webkit-box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.48);
-  -moz-box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.48); */
   box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.48);
 }.BoxTextQuickProfileCatPicture{
   display: block;
   color: black;
   font-family: sans-serif;
   font-weight: lighter;
-  /* background-color: #008194; */
   background-color: white;
   margin: 10px;
   padding: 10px;
   border-radius: 10px;
-  /* box-shadow: 5px 10px 8px black; */
-  /* -webkit-box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.48);
-  -moz-box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.48); */
   box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.48);
 }.QuickProfilePicture{
   display: block;
   color: black;
   font-family: sans-serif;
   font-weight: lighter;
-  /* background-color: #008194; */
   background-color: white;
   margin: 10px;
   padding: 10px;
   border-radius: 10px;
-  /* box-shadow: 5px 10px 8px black; */
-  /* -webkit-box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.48);
-  -moz-box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.48); */
   box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.48);
 }.BoxTextQuickProfileLeft{
   margin-left: 60px;
