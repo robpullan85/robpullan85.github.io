@@ -159,6 +159,7 @@
   margin-top: 50px;
   margin-bottom: 50px;
   max-width: 1000px;
+  max-height: 950px;
   padding-bottom: 20px;
   border-radius: 10px;
   background-color: #008194;
@@ -173,7 +174,12 @@
   font-weight: lighter;
   padding-top: 15px;
   margin-bottom: 10px;
-}.BoxTitleQuickAboutMe{
+}.ProfileBoxTextRow{
+  display: flex;
+  max-height: 500px;
+  max-width: 1000px;
+}
+.BoxTitleQuickAboutMe{
   text-align: center;
   font-weight: bold;
   padding-top: 5px;
@@ -224,10 +230,65 @@
 }
 
 /* The Quick Profile Row */
-.HomePageRescueCatsRow{
+
+/* The Quick Hobbies Row */
+
+.HomePageHobbiesRowTitle{
+  text-align: center;
+  font-weight: bold;
+  font-size: 28px;
+  color: white;
+  font-family: sans-serif;
+  font-weight: lighter;
+  padding-top: 15px;
+}.HomePageHobbiesRow{
+  max-width: 1000px;
+  height: 460px;
+  border-radius: 10px;
+  background-color: rgba(181, 0, 0, 255);
+  box-shadow: 10px 10px 24px 5px rgba(0,0,0,0.48);
+}.HobbiesBoxTextRow{
+  display: flex;
+}.HomePageBoxTextHobbiesLeft{
+  color: black;
+  font-family: sans-serif;
+  font-weight: lighter;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  width: 400px;
+  height: 350px;
+  margin-left: 60px;
+  margin-right: 30px;
+}.HomePageBoxTextHobbiesRight{
+  color: black;
+  font-family: sans-serif;
+  font-weight: lighter;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  width: 400px;
+  height: 350px;
+  margin-left: 30px;
+  margin-right: 60px;
+}.HobbiesListRight{
+  margin-left: -10px;
+}
+
+.HomePageDevastatorVideo{
+  margin-top: 10px;
+}.HobbiesSpacePicture{
+  margin-left: 55px;
+  margin-right: 55px;
+  margin-top: 5px;
+}
+
+/* The Quick Hobbies Row */
+
+
+/* .HomePageRescueCatsRow{
   margin-top: 50px;
   max-width: 1000px;
-  /* max-height: auto; */
 }.HomePageRescueCatsRowTitle{
   text-align: center;
   font-weight: bold;
@@ -237,12 +298,12 @@
   font-weight: lighter;
   padding: 10px;
   margin-top: 50px;
-}
+} */
 
-.HomePageHobbiesRow{
+/* .HomePageHobbiesRow{
   margin-top: 50px;
   max-width: 1000px;
-  /* max-height: auto; */
+  max-height: auto;
 }.HomePageHobbiesRowTitle{
   text-align: center;
   font-weight: bold;
@@ -252,12 +313,11 @@
   font-weight: lighter;
   padding: 10px;
   margin-top: 50px;
-}
+} */
 
-.HomePageProjectsRow{
+/* .HomePageProjectsRow{
   margin-top: 50px;
   max-width: 1000px;
-  /* max-height: auto; */
 }.HomePageProjectsRowTitle{
   text-align: center;
   font-weight: bold;
@@ -267,12 +327,11 @@
   font-weight: lighter;
   padding: 10px;
   margin-top: 50px;
-}
+} */
 
-.HomePageCharityWorkRow{
+/* .HomePageCharityWorkRow{
   margin-top: 50px;
   max-width: 1000px;
-  /* max-height: auto; */
 }.HomePageCharityWorkRowTitle{
   text-align: center;
   font-weight: bold;
@@ -282,7 +341,7 @@
   font-weight: lighter;
   padding: 10px;
   margin-top: 50px;
-}
+} */
 
 /* Homepage Webpage*/
 
