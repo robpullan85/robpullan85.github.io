@@ -163,8 +163,7 @@
   padding-bottom: 20px;
   border-radius: 10px;
   background-color: #008194;
-  box-shadow: 10px 10px 24px 5px rgba(0,0,0,0.48);
-}
+  box-shadow: 10px 10px 24px 5px rgba(0,0,0,0.48);}
 .HomePageProfileRowTitle{
   text-align: center;
   font-weight: bold;
@@ -178,8 +177,7 @@
   display: flex;
   max-height: 500px;
   max-width: 1000px;
-}
-.BoxTitleQuickAboutMe{
+}.BoxTitleQuickAboutMe{
   text-align: center;
   font-weight: bold;
   padding-top: 5px;
@@ -273,9 +271,7 @@
   margin-right: 60px;
 }.HobbiesListRight{
   margin-left: -10px;
-}
-
-.HomePageDevastatorVideo{
+}.HomePageDevastatorVideo{
   margin-top: 10px;
 }.HobbiesSpacePicture{
   margin-left: 55px;
@@ -286,19 +282,50 @@
 /* The Quick Hobbies Row */
 
 
-/* .HomePageRescueCatsRow{
-  margin-top: 50px;
+/* The Animal Adoption Row */
+
+.HomePageAnimalAdoptionRow{
   max-width: 1000px;
-}.HomePageRescueCatsRowTitle{
+  height: 515px;
+  border-radius: 10px;
+  margin-top: 50px;
+  box-shadow: 10px 10px 24px 5px rgba(0,0,0,0.48);
+  background-color: rgba(159, 0, 255, 255);
+}
+.HomePageAnimalAdoptionRowTitle{
   text-align: center;
   font-weight: bold;
-  padding-bottom: 5px;
+  font-size: 28px;
+  color: white;
+  font-family: sans-serif;
+  font-weight: lighter;
+  padding-top: 15px;
+  margin-bottom: 10px;
+}
+.HomePageAnimalAdoptionBoxes{
+  display: flex;
+}
+.AnimalAdoptionBoxLeft{
+  margin-left: 60px;
+  margin-right: 30px;
+}
+.AnimalAdoptionBoxRight{
+  margin-left: 30px;
+  margin-right: 60px;
+}
+.AnimalAdoptionBoxText{
   color: black;
   font-family: sans-serif;
   font-weight: lighter;
-  padding: 10px;
-  margin-top: 50px;
-} */
+  background-color: white;
+  margin: 10px;
+  border-radius: 10px;
+  width: 400px;
+  height: 200px;
+}
+
+
+/* The Animal Adoption Row */
 
 /* .HomePageHobbiesRow{
   margin-top: 50px;
@@ -423,6 +450,100 @@
   border-radius: 10px;
   background-color: #008194;
 }
+
+.calculatorProjectBox{
+  margin: 50px 150px 50px 150px;
+  padding-bottom: 20px;
+  background-color: rgba(226, 242, 255, 255);
+  border-radius: 10px;
+  box-shadow: 10px 10px 24px 5px rgba(0,0,0,0.48);
+}.calculatorProjectTitle{
+  text-align: center;
+  font-weight: bold;
+  color: black;
+  font-family: sans-serif;
+  font-weight: lighter;
+  font-size: 28px;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  /* padding-bottom: 10px; */
+}.readMeButton{
+  display: block;
+  margin: 0px auto 10px auto;
+  text-align: center;
+  font-weight: bold;
+  color: black;
+  font-family: sans-serif;
+  font-weight: lighter;
+  font-size: 14px;
+}.inputText{
+  text-align: center;
+  font-weight: bold;
+  color: black;
+  font-family: sans-serif;
+  font-weight: lighter;
+  font-size: 14px;
+  /* margin-bottom: 10px;
+  padding-top: 10px; */
+}#inputTextBox{
+  width: 300px;
+  display: block;
+  margin: 10px auto 10px auto;
+  text-align: center;
+  font-weight: bold;
+  color: black;
+  font-family: sans-serif;
+  font-weight: lighter;
+  font-size: 14px;
+}.calculateButton{
+  display: block;
+  margin: 15px auto 10px auto;
+  text-align: center;
+  font-weight: bold;
+  color: black;
+  font-family: sans-serif;
+  font-weight: lighter;
+  font-size: 14px;
+}.resultText{
+  text-align: center;
+  font-weight: bold;
+  color: black;
+  font-family: sans-serif;
+  font-weight: lighter;
+  font-size: 14px;
+}#resultTextBox{
+  width: 300px;
+  display: block;
+  margin: auto;
+  text-align: center;
+  font-weight: bold;
+  color: black;
+  font-family: sans-serif;
+  font-weight: lighter;
+  font-size: 14px;
+}.readMeTextBox{
+  background-color: white;
+  border-radius: 10px;
+  margin: 0 25px 0 25px;
+  /* padding: 5px 0 5px 0; */
+}.readMeText{
+  text-align: left;
+  /* margin: 0 10px 0 10px; */
+  padding: 10px 0 10px 0;
+  margin: 0 25px 0 25px;
+  /* list-style-type: none; */
+}.readMeTextPoints{
+  margin: 5px 0 5px 0;
+  font-weight: bold;
+  color: black;
+  font-family: sans-serif;
+  font-weight: lighter;
+  font-size: 14px;
+}
+
+
+
+
 
 /* Projects Webpage */
 

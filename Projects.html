@@ -10,6 +10,11 @@
     <style>
     </style>
       <link rel="stylesheet" href="CSS/style.css">
+
+    <script type="text/JavaScript" src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script type="text/JavaScript" src="JavaScript/Calculator.js"></script>
+    <script type="text/JavaScript" src="JavaScript/jQuery.js"></script>
+
   </head>
 
   <body>
@@ -31,10 +36,44 @@
               <a href="https://www.devu.com/">DevU</a>
             </div></li>
       </ul>
-        <div class="ProjectsTopRow">
+        <!-- <div class="ProjectsTopRow">
               <h1 class="ProjectsTopRowTitle">Projects Webpage Under Construction</h1>
-        </div>
+        </div> -->
+
+          <div class="calculatorProjectBox">
+            <h3 class="calculatorProjectTitle">Calculator Project</h3>
+              <div class='readMeButton'>
+                <button id="buttonReadMe">Expression Format</button>
+              </div>
+
+              <div class="readMeTextBox" style="display:none;">
+                <ul class="readMeText">
+                  <li class="readMeTextPoints">The operators available are addition '+' subtraction '-' multiplication '*' and divison '/'</li>
+                  <li class="readMeTextPoints">Only use expressions in the form of the following examples 2+10*6 or 14/2+9</li>
+                  <li class="readMeTextPoints">Calculations are using the BODMAS procedure</li>
+                  <li class="readMeTextPoints">Upcoming operators and functions are exponents, powers, logrithms and trigonometry </li>
+                </ul>
+              </div>
+
+
+              <p class="inputText">Type in your expression: </p>
+              <input type="text" value="56*97-32/2-95+48*2" id="inputTextBox" />
+
+                <div class="calculateButton">
+                  <input type="submit" id="buttonCalculate" value="Calculate" onclick="getElementById('resultTextBox').value = calculator(getElementById('inputTextBox').value)" />
+                </div>
+
+              <p class="resultText">Answer: </p>
+              <input type="text" id="resultTextBox" />
+
+
+          </div>
+
+
     </div>
   </body>
+
+<!-- "getElementById('result').value = calculate(getElementById('input').value)" -->
+
 
 </html>
