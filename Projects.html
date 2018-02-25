@@ -57,7 +57,8 @@
 
 
               <p class="inputText">Type in your expression: </p>
-              <input type="text" value="56*97-32/2-95+48*2" id="inputTextBox" />
+              <!-- <input type="text" value="56*97-32/2-95+48*2" id="inputTextBox" /> -->
+              <input type="text" id="inputTextBox" />
 
                 <div class="calculateButton">
                   <input type="submit" id="buttonCalculate" value="Calculate" onclick="getElementById('resultTextBox').value = calculator(getElementById('inputTextBox').value)" />
@@ -66,8 +67,15 @@
               <p class="resultText">Answer: </p>
               <input type="text" id="resultTextBox" />
 
+              <div class="clearButtons">
+                <input type="submit" id="clearExpression" value="Clear Expression" onclick="getElementById('inputTextBox').value = '' " />
+                <input type="submit" id="clearAnswer" value="Clear Answer" onclick="getElementById('resultTextBox').value = '' " />
+                <input type="submit" id="clearAll" value="Clear All" onclick="getElementById('inputTextBox').value = '', getElementById('resultTextBox').value = '' " />
+              </div>
+
 
           </div>
+
 
 
     </div>
