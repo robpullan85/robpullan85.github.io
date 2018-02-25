@@ -531,8 +531,18 @@
   font-family: sans-serif;
   font-weight: lighter;
   font-size: 14px;
+}.clearButtons{
+  display: block;
+  margin: 15px auto 10px auto;
+  text-align: center;
+  font-weight: bold;
+  color: black;
+  font-family: sans-serif;
+  font-weight: lighter;
+  font-size: 14px;
 }
 /* ------ Projects Webpage ------ */
+
 
 /***************************************************************/
 
