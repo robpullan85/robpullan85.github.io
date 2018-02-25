@@ -8,14 +8,14 @@ $(document).ready(function()
     $('#inputTextBox').focus();
 
 
-// focus the cursor on the expression text box on clicking the
+// focus the cursor on the expression text box after clicking the
 // 'Clear Expression' button
     $( "#clearExpression" ).click(function()
   {
     $( "#inputTextBox" ).focus()
   });
 
-  // focus the cursor on the expression text box on clicking the
+  // focus the cursor on the expression text box after clicking the
   // 'Clear All' button
   $( "#clearAll" ).click(function()
 {
