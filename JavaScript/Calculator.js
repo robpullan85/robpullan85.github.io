@@ -3,7 +3,6 @@ function calculator(input) {
     var expressionArray = [];
     var divisionByZero = 0;
     var incorrectFormat = 0;
-    var zeroToPowerZero = 0;
     var answer = 0;
 
     // while loop to remove any non numbers or operators at the beginning of the string
@@ -30,24 +29,20 @@ function calculator(input) {
     // returning the final answer or an error after all sub expressions have been solved
     if (divisionByZero == 1) {
         var finalCalculation = 'Undefined due to division by zero.';
-        console.log(finalCalculation);
         return finalCalculation;
     }
     else if (incorrectFormat == 1) {
         var finalCalculation = 'Incorrect format, check your expression.';
-        console.log(finalCalculation);
         return finalCalculation;
     }
-    else if (expressionArray[0] == 0 && expressionArray[2] == 0)
+    else if (expressionArray[0] === 0 && expressionArray[2] === 0)
     {
         var finalCalculation = 'Undefined due to zero to power of zero';
-            console.log(finalCalculation);
             return finalCalculation;
     }
     else
     {
         var finalCalculation = expressionArray[0];
-        console.log(finalCalculation);
         return finalCalculation;
     }
 
