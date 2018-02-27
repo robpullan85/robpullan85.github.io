@@ -16,8 +16,7 @@ function calculator(input) {
 
     // ends the function due to invalid format
     if (incorrectFormat == 1) {
-        var finalCalculation = 'Incorrect format, check your expression.';
-        console.log(finalCalculation);
+        var finalCalculation = 'Incorrect format, check your expression.';      
         return finalCalculation;
     }
     // calls the second function to decide the order of procedence
