@@ -33,17 +33,16 @@ function calculator(input) {
         console.log(finalCalculation);
         return finalCalculation;
     }
-    else if (incorrectFormat == 1)
-    {
+    else if (incorrectFormat == 1) {
         var finalCalculation = 'Incorrect format, check your expression.';
         console.log(finalCalculation);
         return finalCalculation;
     }
-    else if (zeroToPowerZero == 1)
+    else if (expressionArray[0] == 0 && expressionArray[2] == 0)
     {
         var finalCalculation = 'Undefined due to zero to power of zero';
-        console.log(finalCalculation);
-        return finalCalculation;
+            console.log(finalCalculation);
+            return finalCalculation;
     }
     else
     {
@@ -51,6 +50,8 @@ function calculator(input) {
         console.log(finalCalculation);
         return finalCalculation;
     }
+
+
 
 
     // The first function for splitting the string into array elements
@@ -241,15 +242,9 @@ function calculator(input) {
                 break;
             // Powers
             case '^':
-                if (a == 0 || b == 0)
-                {
-                    zeroToPowerZero = 1;
-                }
-                else
-                {
-                    answer = Math.pow(a, b);
-                }
-                                 
+                answer = Math.pow(a, b);
+                break;
+
         }
 
         // Catches any answers which are not a number
