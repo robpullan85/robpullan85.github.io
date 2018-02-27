@@ -3,6 +3,7 @@ function calculator(input) {
     var expressionArray = [];
     var divisionByZero = 0;
     var incorrectFormat = 0;
+    var zeroToPowerZero = 0;
     var answer = 0;
 
     // while loop to remove any non numbers or operators at the beginning of the string
@@ -17,6 +18,7 @@ function calculator(input) {
     // ends the function due to invalid format
     if (incorrectFormat == 1) {
         var finalCalculation = 'Incorrect format, check your expression.';
+        console.log(finalCalculation);
         return finalCalculation;
     }
     // calls the second function to decide the order of procedence
@@ -26,13 +28,27 @@ function calculator(input) {
     }
 
     // returning the final answer or an error after all sub expressions have been solved
-    if (divisionByZero == 1 || incorrectFormat == 1)
-    {
+    if (divisionByZero == 1) {
         var finalCalculation = 'Undefined due to division by zero.';
+        console.log(finalCalculation);
         return finalCalculation;
     }
-    else {
+    else if (incorrectFormat == 1)
+    {
+        var finalCalculation = 'Incorrect format, check your expression.';
+        console.log(finalCalculation);
+        return finalCalculation;
+    }
+    else if (zeroToPowerZero == 1)
+    {
+        var finalCalculation = 'Undefined due to zero to power of zero';
+        console.log(finalCalculation);
+        return finalCalculation;
+    }
+    else
+    {
         var finalCalculation = expressionArray[0];
+        console.log(finalCalculation);
         return finalCalculation;
     }
 
@@ -40,8 +56,8 @@ function calculator(input) {
     // The first function for splitting the string into array elements
     function creatingArray(expression) {
         // initial variables declared
-        var operator = '/*+-';
-        var nonOperator = '/*';
+        var operator = '/*+-^';
+        var nonOperator = '/*^';
         var term = '';
 
         // iteration to loop through the string
@@ -77,11 +93,9 @@ function calculator(input) {
             }
 
             // Checks the current location for two negative signs to form a positive sign
-            else if ((operator.indexOf(j) == 3 && expression.charAt(i + 1) == '-') || (operator.indexOf(j) == 2 && expression.charAt(i + 1) == '+') || (operator.indexOf(j) == 3 && expression.charAt(i - 1) == '-') || (operator.indexOf(j) == 2 && expression.charAt(i - 1) == '+'))
-            {
+            else if ((operator.indexOf(j) == 3 && expression.charAt(i + 1) == '-') || (operator.indexOf(j) == 2 && expression.charAt(i + 1) == '+') || (operator.indexOf(j) == 3 && expression.charAt(i - 1) == '-') || (operator.indexOf(j) == 2 && expression.charAt(i - 1) == '+')) {
                 // Checks whether previous element already contains an operator
-                if (expressionArray[expressionArray.length - 1] == operator.charAt(2) || expressionArray[expressionArray.length - 1] == operator.charAt(3))
-                {
+                if (expressionArray[expressionArray.length - 1] == operator.charAt(2) || expressionArray[expressionArray.length - 1] == operator.charAt(3)) {
                     expressionArray.pop();
                 }
 
@@ -92,11 +106,9 @@ function calculator(input) {
 
 
             // Checks the current location for alternate minus and positive signs to form a negative sign
-            else if ((operator.indexOf(j) == 2 && expression.charAt(i + 1) == '-') || (operator.indexOf(j) == 3 && expression.charAt(i + 1) == '+') || (operator.indexOf(j) == 2 && expression.charAt(i - 1) == '-') || (operator.indexOf(j) == 3 && expression.charAt(i - 1) == '+'))
-            {
+            else if ((operator.indexOf(j) == 2 && expression.charAt(i + 1) == '-') || (operator.indexOf(j) == 3 && expression.charAt(i + 1) == '+') || (operator.indexOf(j) == 2 && expression.charAt(i - 1) == '-') || (operator.indexOf(j) == 3 && expression.charAt(i - 1) == '+')) {
                 // Checks whether previous element already contains an operator
-                if (expressionArray[expressionArray.length - 1] == operator.charAt(3) || expressionArray[expressionArray.length - 1] == operator.charAt(2))
-                {
+                if (expressionArray[expressionArray.length - 1] == operator.charAt(3) || expressionArray[expressionArray.length - 1] == operator.charAt(2)) {
                     expressionArray.pop();
                 }
                 expressionArray.push('-');
@@ -105,8 +117,7 @@ function calculator(input) {
             }
 
             // Checks for a valid operator and empties the term variable
-            else if (operator.indexOf(j) > -1 && nonOperator.indexOf(expression.charAt(i + 1)) == -1)
-            {
+            else if (operator.indexOf(j) > -1 && nonOperator.indexOf(expression.charAt(i + 1)) == -1) {
 
                 expressionArray.push(j);
                 term = '';
@@ -144,7 +155,19 @@ function calculator(input) {
 
 
     // Second function to perform the calculation using DMAS of the BODMAS order
-    function orderOfProcedence(expressionArray) {
+    function orderOfProcedence(expressionArray)
+    {
+
+        for (var i = 0, d; d = expressionArray[i]; i++)
+        {
+            if (d == '^') {
+                var elementPosition = expressionArray.indexOf('^');   // creates the element's current position of the array
+                var sign = expressionArray[elementPosition];          // creates the sign variable to pass into the third function
+                calculationByOperation(sign, elementPosition);        // calling the function to resolve the sub expression found
+                i = 0;  // resets the counter to begin from the start of the expression
+            }
+        }
+
         // Checking and calculating division and multiplication from left to right
         for (var i = 0, d; d = expressionArray[i]; i++) {
             if (d == '/') {
@@ -194,8 +217,7 @@ function calculator(input) {
         var elementDelete = elementPosition - 1;        // selecting the start position to delete the elements after a valid answer is found
 
         // this will perform the calculation per term
-        switch (sign)
-        {
+        switch (sign) {
             // division case and checks for division by zero
             case '/':
                 if (b == 0) {
@@ -217,11 +239,21 @@ function calculator(input) {
             case '-':
                 answer = a - b;
                 break;
+            // Powers
+            case '^':
+                if (a == 0 || b == 0)
+                {
+                    zeroToPowerZero = 1;
+                }
+                else
+                {
+                    answer = Math.pow(a, b);
+                }
+                                 
         }
 
         // Catches any answers which are not a number
-        if (isNaN(answer))
-        {
+        if (isNaN(answer)) {
             incorrectFormat = 1;
         }
         expressionArray.splice(elementDelete, 3, answer); // replaces the current term in the array with a valid answer
