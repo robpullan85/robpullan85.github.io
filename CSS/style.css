@@ -258,6 +258,7 @@
   height: 350px;
   margin-left: 60px;
   margin-right: 30px;
+  box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.48);
 }.HomePageBoxTextHobbiesRight{
   color: black;
   font-family: sans-serif;
@@ -269,6 +270,7 @@
   height: 350px;
   margin-left: 30px;
   margin-right: 60px;
+  box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.48);
 }.HobbiesListRight{
   margin-left: -10px;
 }.HomePageDevastatorVideo{
@@ -312,6 +314,7 @@ background-color: white;
 border-radius: 10px;
 padding: 10px 0 10px 0;
 margin: 20px 50px 0 50px;
+box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.48);
 }.homePageCatSlideShowPicture{
 display: none;
 margin: 15px -25px 10px -25px;
@@ -334,7 +337,7 @@ margin: 15px -25px 10px -25px;
   border: none;
   right: 0;
   top: 50%;
-    font-size: 25px;
+  font-size: 25px;
   font-weight: bold;
   color: white;
   width: 50px;
