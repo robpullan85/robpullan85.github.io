@@ -286,7 +286,7 @@
 
 .HomePageAnimalAdoptionRow{
   max-width: 1000px;
-  height: 515px;
+  height: 650px;
   border-radius: 10px;
   margin-top: 50px;
   box-shadow: 10px 10px 24px 5px rgba(0,0,0,0.48);
@@ -302,10 +302,53 @@
   padding-top: 15px;
   margin-bottom: 10px;
 }
-.HomePageAnimalAdoptionBoxes{
-  display: flex;
+
+.homePageCatSlideShow{
+text-align: center;
+background-color: white;
+border-radius: 10px;
+padding: 10px 0 10px 0;
+margin: 20px 50px 0 50px;
+
+}.homePageCatSlideShowPicture{
+display: none;
+margin: 15px -25px 10px -25px;
+}.slideShowButtonLeft{
+  position: absolute;
+  outline-style: none;
+  background-color: Transparent;
+  border: none;
+  left: 452px;
+  bottom: -1175px;
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+  width: 50px;
+  height: auto;
+}.slideShowButtonRight{
+  position: absolute;
+  outline-style: none;
+  background-color: Transparent;
+  border: none;
+  right: 451px;
+  bottom: -1175px;
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+  width: 50px;
+  height: auto;
+}.slideShowButtonLeft:hover, .slideShowButtonRight:hover{
+  outline-style: none;
+  background-color: purple;
+  border: none;
+  cursor: default;
 }
-.AnimalAdoptionBoxLeft{
+
+
+/* .HomePageAnimalAdoptionBoxes{
+  display: flex;
+} */
+/* .AnimalAdoptionBoxLeft{
   margin-left: 60px;
   margin-right: 30px;
 }
@@ -322,7 +365,7 @@
   border-radius: 10px;
   width: 400px;
   height: 200px;
-}
+} */
 
 
 /* The Animal Adoption Row */
