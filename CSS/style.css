@@ -303,13 +303,15 @@
   margin-bottom: 10px;
 }
 
-.homePageCatSlideShow{
+
+.HomePageAnimalAdoptionRow{
+  position: relative;
+}.homePageCatSlideShow{
 text-align: center;
 background-color: white;
 border-radius: 10px;
 padding: 10px 0 10px 0;
 margin: 20px 50px 0 50px;
-
 }.homePageCatSlideShowPicture{
 display: none;
 margin: 15px -25px 10px -25px;
@@ -318,8 +320,8 @@ margin: 15px -25px 10px -25px;
   outline-style: none;
   background-color: Transparent;
   border: none;
-  left: 452px;
-  bottom: -1175px;
+  left: 0;
+  top: 50%;
   font-size: 25px;
   font-weight: bold;
   color: white;
@@ -330,9 +332,9 @@ margin: 15px -25px 10px -25px;
   outline-style: none;
   background-color: Transparent;
   border: none;
-  right: 451px;
-  bottom: -1175px;
-  font-size: 25px;
+  right: 0;
+  top: 50%;
+    font-size: 25px;
   font-weight: bold;
   color: white;
   width: 50px;
