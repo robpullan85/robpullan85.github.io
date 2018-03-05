@@ -238,7 +238,8 @@ function calculator(input) {
         var a = parseFloat(expressionArray[elementPosition - 1]);   // selecting the first number
         var b = parseFloat(expressionArray[elementPosition + 1]);   // selecting the second number
         var elementDelete = elementPosition - 1;        // selecting the start position to delete the elements after a valid answer is found
-
+        var minusCheck = expressionArray[0];
+        
         // this will perform the calculation per term
         switch (sign) {
             // division case and checks for division by zero
@@ -263,13 +264,19 @@ function calculator(input) {
                 answer = a - b;
                 break;
             // Powers and exponents
-            case '^':
+            case '^':                
                 if (a == 0 && b == 0)
                 {
                     zeroToPowerZero = 1;
                     break;
                 }
-                else {
+                else if (expressionArray[1] == '^' && minusCheck.charAt(0) == '-')
+                {
+                    answer = -Math.pow(a, b);
+                    break;
+                }
+                else 
+                {
                    answer = Math.pow(a, b);
                 }
                 break;
