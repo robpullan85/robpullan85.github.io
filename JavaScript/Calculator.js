@@ -265,11 +265,14 @@ function calculator(input) {
                 break;
             // Powers and exponents
             case '^':                
+                // checks for 0^0 which is undefined
                 if (a == 0 && b == 0)
                 {
                     zeroToPowerZero = 1;
                     break;
                 }
+                // prevents the first term from including negative signs e.g. -2^2 is NOT equal to (-2)^2. Terms 
+                // similar to (-2)^2 will be resolved when parenthesis are added to the calculator
                 else if (expressionArray[1] == '^' && minusCheck.charAt(0) == '-')
                 {
                     answer = -Math.pow(a, b);
